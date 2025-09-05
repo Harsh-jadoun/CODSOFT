@@ -262,10 +262,10 @@ button:hover {
     gap: 10px;
 }
 .img {
-    width: 370px;
+    width: 80%;
     height: 150px;
     overflow: hidden;
-    object-fit: cover;
+    object-fit:cover;
     object-position: center 50%;
     border-radius: 10px;
     padding: 0;
@@ -371,8 +371,8 @@ footer {
 }
 
 @media(max-width: 768px) {
-    .other {
-        padding-left: 500px;
+    .other a {
+       display: none;
     }
     .container {
         flex-direction: column-reverse;
@@ -380,14 +380,27 @@ footer {
         padding-left: 7%;
         padding-bottom: 70px;
     }
+    .About{
+        height: 1100px;
+    }
     .about-child {
         flex-direction: column;
         padding: 0;
         margin: 0;
-        height: 800px;
-        justify-content: center;
+        height:1000px;
+        justify-content: space-evenly;
         align-items: center;
         gap: 10px;
+        padding-bottom: 20px;
+        overflow: hidden;
+    }
+    .left2 {
+        height: 30%;
+        width: 70%;
+    }
+    .left2:hover {
+        width: 72%;
+        height: 25%;
     }
     .right2 {
         width: 90%;
@@ -417,6 +430,9 @@ footer {
     }
     .card {
         height: 500px;
+        margin-left: 7%;
+        margin-right: 7%;
+        width: 80%;
     }
     .card:hover {
     box-shadow: 0 0 15px rgb(99, 58, 99),0 0 30px rgb(99, 58, 99),0 0 60px rgb(99, 58, 99);
